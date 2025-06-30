@@ -8,7 +8,7 @@ export default function Profile() {
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold">Your Profile</h1>
           <p className="text-muted-foreground">
-            Coming soon - Manage your profile and preferences here
+             Manage your profile and preferences here
           </p>
         </div>
       </div>
