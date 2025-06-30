@@ -25,6 +25,9 @@ export default function Browse() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [priceRange, setPriceRange] = useState("");
   const [location, setLocation] = useState("");
+  const [ageRange, setAgeRange] = useState("");
+  const [gender, setGender] = useState("");
+  const [race, setRace] = useState("");
 
   // Mock data for all roommates
   const allRoommates = [
@@ -111,6 +114,9 @@ export default function Browse() {
   const activeFilters = [
     ...(priceRange ? [`Budget: ${priceRange}`] : []),
     ...(location ? [`Location: ${location}`] : []),
+    ...(ageRange ? [`Age: ${ageRange}`] : []),
+    ...(gender ? [`Gender: ${gender}`] : []),
+    ...(race ? [`Race: ${race}`] : []),
   ];
 
   return (
@@ -161,6 +167,51 @@ export default function Browse() {
                   </SelectContent>
                 </Select>
 
+                <Select value={ageRange} onValueChange={setAgeRange}>
+                  <SelectTrigger className="w-[140px]">
+                    <SelectValue placeholder="Age" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="18-22">18-22</SelectItem>
+                    <SelectItem value="23-27">23-27</SelectItem>
+                    <SelectItem value="28-32">28-32</SelectItem>
+                    <SelectItem value="33+">33+</SelectItem>
+                  </SelectContent>
+                </Select>
+
+                <Select value={gender} onValueChange={setGender}>
+                  <SelectTrigger className="w-[140px]">
+                    <SelectValue placeholder="Gender" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Female">Female</SelectItem>
+                    <SelectItem value="Male">Male</SelectItem>
+                    <SelectItem value="Non-binary">Non-binary</SelectItem>
+                    <SelectItem value="Prefer not to say">
+                      Prefer not to say
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+
+                <Select value={race} onValueChange={setRace}>
+                  <SelectTrigger className="w-[140px]">
+                    <SelectValue placeholder="Ethnicity" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Asian">Asian</SelectItem>
+                    <SelectItem value="Black">Black</SelectItem>
+                    <SelectItem value="Hispanic/Latino">
+                      Hispanic/Latino
+                    </SelectItem>
+                    <SelectItem value="White">White</SelectItem>
+                    <SelectItem value="Mixed">Mixed</SelectItem>
+                    <SelectItem value="Other">Other</SelectItem>
+                    <SelectItem value="Prefer not to say">
+                      Prefer not to say
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+
                 <Button variant="outline" size="sm">
                   <SlidersHorizontal className="w-4 h-4 mr-2" />
                   More Filters
@@ -199,6 +250,9 @@ export default function Browse() {
                       onClick={() => {
                         if (filter.startsWith("Budget:")) setPriceRange("");
                         if (filter.startsWith("Location:")) setLocation("");
+                        if (filter.startsWith("Age:")) setAgeRange("");
+                        if (filter.startsWith("Gender:")) setGender("");
+                        if (filter.startsWith("Race:")) setRace("");
                       }}
                       className="ml-1 hover:text-destructive"
                     >
