@@ -8,7 +8,7 @@ export default function Messages() {
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold">Messages</h1>
           <p className="text-muted-foreground">
-            Coming soon - Chat with potential roommates here
+             Chat with potential roommates here
           </p>
         </div>
       </div>
