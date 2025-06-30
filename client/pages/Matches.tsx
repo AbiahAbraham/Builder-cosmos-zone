@@ -8,7 +8,7 @@ export default function Matches() {
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold">Your Matches</h1>
           <p className="text-muted-foreground">
-            Coming soon - View all your roommate matches here
+             View all your roommate matches here
           </p>
         </div>
       </div>
