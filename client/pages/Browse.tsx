@@ -272,7 +272,7 @@ export default function Browse() {
               <div>
                 <h1 className="text-2xl font-bold">Browse Roommates</h1>
                 <p className="text-muted-foreground">
-                  {allRoommates.length} roommates found in Seattle
+                  {allRoommates.length} roommates found in Manhattan&nbsp;
                 </p>
               </div>
             </div>
