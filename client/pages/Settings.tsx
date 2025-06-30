@@ -8,7 +8,7 @@ export default function Settings() {
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold">Settings</h1>
           <p className="text-muted-foreground">
-            Coming soon - Configure your account settings and preferences
+            Configure your account settings and preferences
           </p>
         </div>
       </div>
