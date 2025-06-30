@@ -53,7 +53,7 @@ const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
             </div>
             {!collapsed && (
               <span className="font-bold text-xl text-sidebar-foreground">
-                RoomieMatch
+                Roomify
               </span>
             )}
           </Link>
