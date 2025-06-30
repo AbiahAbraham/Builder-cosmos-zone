@@ -8,7 +8,7 @@ export default function Nearby() {
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold">Near You</h1>
           <p className="text-muted-foreground">
-            Coming soon - Discover roommates and rooms in your area
+            Discover roommates and rooms in your area
           </p>
         </div>
       </div>
