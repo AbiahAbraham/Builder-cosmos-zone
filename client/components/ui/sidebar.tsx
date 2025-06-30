@@ -91,9 +91,12 @@ const Sidebar = React.forwardRef<HTMLDivElement, SidebarProps>(
                 "w-full gap-3 bg-primary text-primary-foreground hover:bg-primary/90",
                 collapsed && "px-3",
               )}
+              asChild
             >
-              <Plus className="w-5 h-5" />
-              {!collapsed && <span>Create Listing</span>}
+              <Link to="/create-listing">
+                <Plus className="w-5 h-5" />
+                {!collapsed && <span>Create Listing</span>}
+              </Link>
             </Button>
           </div>
 
