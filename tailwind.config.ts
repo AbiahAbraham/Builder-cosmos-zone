@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Brand colors for RoomieMatch
+        brand: {
+          green: "hsl(158 64% 52%)",
+          purple: "hsl(270 95% 75%)",
+          "dark-bg": "hsl(220 13% 8%)",
+          "dark-surface": "hsl(220 13% 12%)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
